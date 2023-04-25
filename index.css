@@ -1,99 +1,42 @@
 *{box-sizing: border-box;}
 
 body{
-    display:grid;
-    align-items: center;
-    justify-items: center;
-    margin: 10px;;
-    min-height:100vh;    
-}
-.contenair{
-    background-image: 'perfumepc.png';
-    display:grid;    
-    grid-template-columns: 2fr 2fr;       
-    align-items: center;    
-    max-width: 625px;
-}
-
-.picture{
-    background-image: 'perfumepc.png';
-    
-    display:grid;
-    height: 100%;   
-}
-img{
-    background-image: 'perfumepc.png';
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    max-width: 375px; 
-     }
-.content{ 
-    background-color: aliceblue;
-    max-width: 375px;
-    padding: 39px;
-    border-radius: 5px;
-    font-weight: bold;
-}   
-.entitled, .description{
-    color:hsl(228, 12%, 48%) ;
-}
-.price{
-    display:flex;
-    flex-direction: row;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items:center;
     justify-content: center;
-    align-items: center;   
+    background-color:hsl(212, 45%, 89%) ;
+    min-height: 100vh;
+    margin: 0;   
+}  
+.h{    
+    text-align: center;   
+    font-weight: 700;
+    width: 340px;    
 }
-h2{
-    padding: 5px;
-    color:#3d8168 ;
-    font-size: 2em;
+.p{  
+    text-align: center;
+    font-size: 15px;   
 }
-h3{
-    padding: 5px; 
-    color:hsl(228, 12%, 48%) ; 
-    text-decoration: line-through;
-    font-size: 0.8em;
+.contenair{   
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    box-shadow: 10px 10px 50px gray;
+    max-width: 375px;   
+}   
+.attribution{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;  
 }
-  button{
-    background-color: #3d8168;
-    border-radius: 5px;
-    color: aliceblue;
-    width: 140px;
-    height: 60px;
-    border-style: none;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 1.5em;   
-}
-@media screen and (max-width: 625px) { 
-
-.contenair{
-    background-image: 'perfumepc.png';
-    display:flex;    
-    flex-direction: column;         
+.pic{
+    background-image:"image-qr-codemini.png" ;
+   border:10px solid  hsl(216, 95%, 57%);
+    border-radius: 20px;
+    display: flex;
+    max-width: 365px;  
 } 
 img{
-    background-image: 'perfumepc.png';
-    display: flex;
-    justify-content: center;
-    height: 60%;
-    width: 150%;
-    border-radius: 5px;
-    max-width: 365px;     
-     }
-     .content{    
-        background-color: aliceblue;
-        max-width: 300px;
-        max-height:485px;
-        padding: 39px;       
-        border-radius: 5px;
-        font-weight: bold;       
-    } 
-    .picture{
-        background-image: 'perfumepc.png';
-        display: flex;
-        justify-content: center;
-        max-height: 295px;
-        max-width: 200px;        
-}   }
+    max-width: 330px;
+}
